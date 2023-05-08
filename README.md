@@ -12,4 +12,19 @@ Credit to the original animator: https://beesandbombs.tumblr.com/
   Rotating Cube</a> by <a href="https://codepen.io/will-206">@will-206</a>
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+This code creates an animation of 3D rotating cubes pattern on an HTML canvas. The cubes are projected onto a 2D plane using isometric projection. The cubes are arranged in a spiral pattern around the center and rotate 90 degrees in a sequence based on distance from the center, with each cube starting its rotation slightly later than the previous one. The animation runs in a loop, restarting after a set interval.
+
+Optimizations: 
+
+Frame rate limiting: The code limits the frame rate to 30 FPS by checking the time elapsed between frames before redrawing the scene. This helps prevent unnecessary computations and reduces CPU usage.
+
+Off-canvas culling: The code checks if a cube's position is within the visible canvas area before drawing it. If a cube is off-canvas, it is not drawn, saving computational resources by not rendering unnecessary elements.
+
+Face culling: The code omits drawing the right and back faces of the cube, as they are never visible in the isometric view. This reduces the number of faces to be drawn, improving rendering performance.
+
+Efficient cube rotation calculation: The cube's rotation progress is calculated based on the elapsed time and the total rotation time, ensuring smooth rotation transitions while reducing unnecessary computations.
+
+
+
+
