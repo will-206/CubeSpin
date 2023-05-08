@@ -21,7 +21,7 @@ Frame rate limiting: The code limits the frame rate to 30 FPS by checking the ti
 
 Off-canvas culling: The code checks if a cube's position is within the visible canvas area before drawing it. If a cube is off-canvas, it is not drawn, saving computational resources by not rendering unnecessary elements.
 
-Face culling: The code omits drawing the right and back faces of the cube, as they are never visible in the isometric view. This reduces the number of faces to be drawn, improving rendering performance.
+Face culling: The code omits drawing the right and bottom faces of the cube, as they are never visible in the isometric view. This reduces the number of faces to be drawn, improving rendering performance.
 
 Efficient cube rotation calculation: The cube's rotation progress is calculated based on the elapsed time and the total rotation time, ensuring smooth rotation transitions while reducing unnecessary computations.
 
