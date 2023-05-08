@@ -25,8 +25,7 @@ Face culling: The code omits drawing the right and bottom faces of the cube, as 
 
 Efficient cube rotation calculation: The cube's rotation progress is calculated based on the elapsed time and the total rotation time, ensuring smooth rotation transitions while reducing unnecessary computations.
  
-Here's <span>another version <a href="https://codepen.io/will-206/pen/WNaMaRq">
-  CubeSpin2</a>, where the translation direction and rotation axis changes by 120 degrees every cycle. 
+Here's <span><a href="https://codepen.io/will-206/pen/WNaMaRq">another version</a>, where the translation direction and rotation axis changes by 120 degrees every cycle. 
 
 
 ![cubes2small](https://user-images.githubusercontent.com/20939293/236800410-17725706-58ee-4fd3-ab82-5da62e5173e9.gif)
