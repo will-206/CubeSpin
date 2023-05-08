@@ -24,7 +24,7 @@ Off-canvas culling: The code checks if a cube's position is within the visible c
 Face culling: The code omits drawing the right and bottom faces of the cube, as they are never visible in the isometric view. This reduces the number of faces to be drawn, improving rendering performance.
 
 Efficient cube rotation calculation: The cube's rotation progress is calculated based on the elapsed time and the total rotation time, ensuring smooth rotation transitions while reducing unnecessary computations.
-
-
+ 
+![cubes2small](https://user-images.githubusercontent.com/20939293/236800410-17725706-58ee-4fd3-ab82-5da62e5173e9.gif)
 
 
